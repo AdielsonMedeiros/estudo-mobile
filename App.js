@@ -6,7 +6,7 @@ function App() {
       <View>
         <Text style={{color: 'red', fontSize: 25, margin: 15}}>Olá mundo</Text>
         <Text style={{fontSize:18, color: 'blue'}}>Adielson Medeiros</Text>
-        <Logo />
+        <Logo largura={350} altura={350} fulano="Adielson Medeiros"/>
       </View>
 
 
@@ -17,8 +17,11 @@ export default App;
 
 let img = 'https://sujeitoprogramador.com/reactlogo.png'
 
-function Logo(){
+function Logo(props){
   return(
-    <Image source={{ uri: img}} style ={{width: 300, height:  300}}/>
-  )
+    <View>
+    <Image source={{ uri: img}} style ={{width: props.largura, height:props.altura}}/>
+    <Text>{props.fulano}</Text>
+    </View>
+    );
 }
