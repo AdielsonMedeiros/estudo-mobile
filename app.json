@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "teste-reactnative",
+    "slug": "teste-reactnative",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
